@@ -27,13 +27,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve uploaded images
  // Apply rate limiting
-const corsOptions = {
-    origin: 'https://disney-front-end.onrender.com/',
-    optionsSuccessStatus: 200 
-};
+
   
 // Apply CORS middleware with options
-app.use(cors(corsOptions));
+app.use(cors());
 
 const fileModel = require('./models/filepath')
 const path = require('path');
