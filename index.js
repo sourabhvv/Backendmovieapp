@@ -56,7 +56,7 @@ app.use('/users', userRouter)
 app.use('/author',authorRouter)
 
 app.get('/', (req, res) => {
-    res.send('Hello from API')
+    res.send('Hello from developer')
 
 
 })
