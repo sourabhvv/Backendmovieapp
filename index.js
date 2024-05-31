@@ -28,7 +28,7 @@ app.use(express.json());
 // Serve uploaded images
  // Apply rate limiting
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://disney-front-end.onrender.com/',
     optionsSuccessStatus: 200 
 };
   
